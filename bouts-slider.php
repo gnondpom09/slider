@@ -61,7 +61,7 @@ function boutsslider_columns($column) {
 	global $post;
 
 	if ($column == 'thumbnail') {
-		echo edit_post_link(get_the_post_thumbnail($post->ID), null, null, $post->ID);
+		echo edit_post_link(get_the_post_thumbnail($post->ID, 'thumbnail'), null, null, $post->ID);
 	}
 
 }
